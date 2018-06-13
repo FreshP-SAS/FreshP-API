@@ -54,6 +54,6 @@ app.use(function(err, req, res, next) {
 });
 
 let server = http.createServer(app);
-server.listen(3000, () => {
-  console.log('Server listening on port ' + 3000);
+server.listen(80, () => {
+  console.log('Server listening on port ' + 80);
 });
