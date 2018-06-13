@@ -28,7 +28,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(compression());
 app.use(express.static(path.join(__dirname, 'dist')));
-
+app.use( require('express-force-domain')('http://www.freshp.fr') );
 
 //**** Passport ****//
 app.use(passport.initialize());
